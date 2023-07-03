@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♥ Shavelyyyyyyy ¿Puedo ser tu novia? ♥</title>
+    <style>
+        .body {
+            background-color: khaki;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            
+        }
+
+        .body__title {
+            color: white;
+            font-size: xx-large;
+        }
+
+        .body__img {
+            width: 20%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="body">
+    <h1 class="body__title">♥ Shavelyyyyyyy ¿Puedo ser tu novia? ♥</h1>
+    <img 
+    src="https://i.pinimg.com/originals/5a/05/3a/5a053aa3b5e1183b6bc16149b09084d5.png" 
+    alt="Nuestro sin cara" class="body__img"/>
+    <button id="yes">Sí, wiiii</button>
+    <button id="no">No, sorry</button>
+
+        <script>
+            const vutonSi = document.getElementById('yes');
+            const vutonNo = document.getElementById('no');
+
+            const Novias = () => {
+                alert('Me gustas mucho, ahora sí puedo decir que somos novias');
+                alert('Ahora escucha esta canción que siempre me hace pensar en ti');
+                location.href = 'https://www.youtube.com/watch?v=sdhep5OaAC0&ab_channel=CarlaMorrison=21s';
+            }
+
+            const Nonovias = () => {
+                vutonNo.style.position ='absolute';
+                vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+                vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+            }
+
+            vutonSi.addEventListener('click',Novias);
+            vutonNo.addEventListener('mouseover',Nonovias);
+        </script>
+</body>
+</html>
